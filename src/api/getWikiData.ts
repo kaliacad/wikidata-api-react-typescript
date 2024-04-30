@@ -1,8 +1,6 @@
 import axios from 'axios';
 import { Entity } from '../lib/types';
 
-
-
 interface SearchResponse {
    search: Entity[];
 }
@@ -37,10 +35,3 @@ const getWikiData = async (searchQuery: string = ""): Promise<Entity[]> => {
 }
 
 export default getWikiData;
-
-// // Example usage:
-// fetchData("example").then(entities => {
-//    console.log(entities);
-// }).catch(error => {
-//    console.error("Error:", error);
-// });

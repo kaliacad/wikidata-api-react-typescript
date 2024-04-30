@@ -2,6 +2,8 @@ import { useState } from "react";
 import getWikiData from "./api/getWikiData";
 import Card from "./components/Card";
 import { Entity } from "./lib/types";
+import init from "./lib/init";
+import CardSqueletton from "./components/CardSqueletton";
 
 const App: React.FC = () => {
    const [query, setQuery] = useState("");
@@ -51,11 +53,11 @@ const App: React.FC = () => {
                         key={d.id}
                         label={d.label}
                         descrition={d.description}
-                        url={d.url}
+                        url={d?.url}
                      />
                   ))
                ) : (
-                  <h1>Loading...</h1>
+                  init().map((wiki, i) => <CardSqueletton key={i} />)
                )
             }
          </div>
