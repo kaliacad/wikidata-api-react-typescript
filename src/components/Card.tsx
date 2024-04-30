@@ -1,7 +1,17 @@
 
-const Card = () => {
+type Props = {
+   label: string;
+   descrition: string;
+   url: string;
+}
+
+const Card = ({label, descrition, url}: Props) => {
    return (
-      <h1>Card</h1>
+      <div>
+         <h1>{label}</h1>
+         <p>{descrition}</p>
+         <img src={url} alt={label} />
+      </div>
    );
 };
 
