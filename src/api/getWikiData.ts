@@ -1,19 +1,30 @@
 import axios from 'axios';
 import { Entity } from '../lib/types';
 
+
 interface SearchResponse {
    search: Entity[];
 }
 
+type Params = {
+   origin: string;
+   action: string;
+   format: string;
+   search: string;
+   language: string;
+   limit: string;
+};
+
 const getWikiData = async (searchQuery: string = ""): Promise<Entity[]> => {
    const url: string = "https://www.wikidata.org/w/api.php";
 
-   const params = {
+   const params: Params = {
       origin: "*",
       action: "wbsearchentities",
       format: "json",
       search: searchQuery,
-      language: "fr"
+      language: "fr",
+      limit: "max"
    };
 
    try {
@@ -29,7 +40,6 @@ const getWikiData = async (searchQuery: string = ""): Promise<Entity[]> => {
 
       return final_data;
    } catch (error) {
-      console.error("Error fetching data:", error);
       return [];
    }
 }

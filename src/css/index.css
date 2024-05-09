@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+
+    /* Dark Theme */
+    /* bg */
+    --Very-Dark-Blue: #1e202a;
+    /* (Top BG Pattern) */
+    --Very--Dark-Blue: #1f212e;
+    /* (Card BG */
+
+    --Dark-Desaturated-Blue: #252a41;
+    /* (Text) */
+    --Desaturated-Blue: #8b97c6;
+    /* (Text) */
+    --White: #ffffff;
+
+    /* Light Theme */
+
+    /* bg */
+
+    --White: #ffffff;
+    /* (Top BG Pattern) */
+    --Very-Pale-Blue: #f5f7ff;
+    /* (Card BG) */
+    --Light-Grayish-Blue: #f0f2fa;
+    /* (Text) */
+    --Dark-Grayish-Blue: #63687e;
+    /* (Text) */
+    --Very-Dark-Blue: #1e202a;
+
+}
+/* https://heroicons.com/ */
+
+@layer base {
+    html {
+        background: var(--Very--Dark-Blue);
+        color: var(--White);
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-variation-settings:
+            "slnt" 0;
+    }
+}
