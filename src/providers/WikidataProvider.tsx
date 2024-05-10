@@ -1,20 +1,7 @@
-import { createContext, useState, ReactNode } from 'react';
-import { Entity, IWikidataProvider } from '../lib/types';
+import { useState, ReactNode } from 'react';
+import { Entity } from '../lib/types';
+import { WikidataContext } from '../contexts/WikidataContext';
 
-
-// const defaultType: IWikidataProvider = {
-//     data: [{
-//         label: "some string",
-//         description: 'same description',
-//         url: 'djdjjfe',
-//         id: 'dkaerie'
-//     }],
-//     setData: null
-// };
-
-
-
-export const WikidataContext = createContext<IWikidataProvider>(null!);
 
 // Type for children prop
 

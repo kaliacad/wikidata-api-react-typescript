@@ -1,9 +1,9 @@
 import { useState } from "react";
-import getWikiData from "./api/getWikiData";
-import Card from "./components/Card";
-import { Entity } from "./lib/types";
-import init from "./lib/init";
-import CardSqueletton from "./components/CardSqueletton";
+import getWikiData from "../api/getWikiData";
+import Card from "../components/Card";
+import { Entity } from "../lib/types";
+import init from "../lib/init";
+import CardSqueletton from "../components/CardSqueletton";
 
 const App: React.FC = () => {
    const [query, setQuery] = useState("");

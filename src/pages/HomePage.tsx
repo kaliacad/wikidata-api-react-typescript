@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Card from "../components/Card";
 import init from "../lib/init";
 import CardSqueletton from "../components/CardSqueletton";
-import { WikidataContext } from "../providers/WikidataProvider";
+import { WikidataContext } from "../contexts/WikidataContext";
 
 const HomePage = () => {
     const { data } = useContext(WikidataContext);

@@ -1,7 +1,6 @@
 import { useState, useContext } from "react";
-import { WikidataContext } from '../providers/WikidataProvider';
+import { WikidataContext } from '../contexts/WikidataContext';
 import getWikiData from '../api/getWikiData.ts';
-
 
 
 const Header = () => {
