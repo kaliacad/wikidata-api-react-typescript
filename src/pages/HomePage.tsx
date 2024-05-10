@@ -10,7 +10,7 @@ const HomePage = () => {
         <div className="mx-24 my-4">
             <div>
                 <h1>Search you wiki??</h1>
-                {/* {!data ? (
+                {!data ? (
                     init().map((wiki, i) => <CardSqueletton key={i} />)
                 ) : (
                     data?.map((d) => (
@@ -21,7 +21,7 @@ const HomePage = () => {
                             url={d?.url}
                         />
                     ))
-                )} */}
+                )}
             </div>
         </div>
     );
